@@ -5,9 +5,23 @@
         <meta charset="UTF-8">
     </head>
     <body>
-       <header><!--Capçalera pagina--></header>
-       <nav><!--Barra navegacio--></nav>
-       <main><!--Contingut/Cos--></main>
-       <footer><!--Peu de pagina--></footer>
+       <h1>Formulari</h1>
+       <form action="./login.php" method="POST">
+            <div>
+                <label for="inpEmail">Mail:</label>
+                <input id="inpEemail" name="mail" minlength="6" maxlength="32" size="10" required>
+            </div>
+            <div>
+                <label for="inpPassword">Password:</label>
+                <input id="inpPassword" type="password" name="passwd" minlength="8" size="10" required>
+            </div>
+            <div>
+                <label for="inpCondicions">Accept terms &amp; conditions</label>
+                <input type="checkbox" name="conditions" id="idConditions">
+            </div>
+            <div>
+                <input type="submit" value="Enviar" name="boton" >
+            </div>
+       </form>
     </body>
 </html>
