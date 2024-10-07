@@ -8,12 +8,16 @@
        <h1>Formulari</h1>
        <form action="./login.php" method="POST">
             <div>
+            <label for="inpName">Nom:</label>
+            <input type="text" name="name" id="inpName">
+            </div>
+            <div>
                 <label for="inpEmail">Mail:</label>
-                <input id="inpEemail" name="mail" minlength="6" maxlength="32" size="10" required>
+                <input type="email" id="inpEmail" name="mail">
             </div>
             <div>
                 <label for="inpPassword">Password:</label>
-                <input id="inpPassword" type="password" name="passwd" minlength="8" size="10" required>
+                <input id="inpPassword" type="password" name="passwd">
             </div>
             <div>
                 <label for="inpCondicions">Accept terms &amp; conditions</label>
